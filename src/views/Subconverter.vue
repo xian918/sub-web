@@ -36,7 +36,7 @@
                     style="width: 100%"
                     v-model="form.customBackend"
                     :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：https://submo.herokuapp.com"
+                    placeholder="动动小手，（建议）自行搭建后端服务。例：https://submo.herokuapp.com/sub?"
                   >
                     <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-autocomplete>
@@ -255,7 +255,7 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "https://submo.herokuapp.com?" }],
+        backendOptions: [{ value: "https://submo.herokuapp.com/sub?" }],
         remoteConfig: [
           {
             label: "universal",
